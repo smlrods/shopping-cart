@@ -24,15 +24,17 @@ function CartItem({ product, cart, setCart }) {
       <h2>{product.name}</h2>
       <img src={product.image}/>
       <p>$ {product.price}</p>
-      <button onClick={() => {
-        if (amount === 1) return;
-        setAmount(amount - 1);
-      }}>-</button>
-      <input type='number' min='1' max='99' value={amount} onChange={(e) => handleChange(e)} />
-      <button onClick={() => {
-        if (amount === 99) return;
-        setAmount(amount + 1);
-      }}>+</button>
+      <div>
+        <button onClick={() => {
+          if (amount === 1) return;
+          setAmount(amount - 1);
+        }}>-</button>
+        <input type='number' min='1' max='99' value={amount} onChange={(e) => handleChange(e)} />
+        <button onClick={() => {
+          if (amount === 99) return;
+          setAmount(amount + 1);
+        }}>+</button>
+      </div>
     </ >
   );
 }

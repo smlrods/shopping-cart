@@ -1,0 +1,38 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.product img {
+  width: 200px;
+}
+
+.product div {
+  display: flex;
+  gap: 5px;
+}
+
+.product div > input {
+  text-align: center;
+}
+
+.product div > button {
+  background-color: white;
+  border: 1px solid black;
+  width: 20px;
+}
+
+.product div > button:hover,
+.product > button:hover {
+  background-color: black;
+  color: white;
+}
+
+.product > button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 0px 20px;
+}

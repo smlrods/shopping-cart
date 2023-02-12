@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import '../assets/styles/Navbar.css';
 
 function Navbar({ cart }) {
   const getTotalAmount = (cart) => {
@@ -7,11 +8,13 @@ function Navbar({ cart }) {
   }
   
   return (
-    <div>
+    <div id='navbar'>
       <h1>Navbar</h1>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/shop">Shop</NavLink>
-      <NavLink to="/cart">{`Cart (${getTotalAmount(cart)})`}</NavLink>
+      <div>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/shop">Shop</NavLink>
+        <NavLink to="/cart">{`Cart (${getTotalAmount(cart)})`}</NavLink>
+      </div>
     </div>
   )
 }

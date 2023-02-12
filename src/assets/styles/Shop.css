@@ -1,0 +1,28 @@
+.Shop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  place-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.Shop a {
+  text-decoration: none;
+  color: black;
+}
+
+.Shop img {
+  width: 300px;
+  height: auto;
+}
+
+.Shop div {
+  border: 1px solid black;
+}
+
+.Shop div:hover {
+  border: 1px solid gray;
+}

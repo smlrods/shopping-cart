@@ -1,4 +1,5 @@
 import CartItem from "./CartItem";
+import '../assets/styles/Cart.css';
 
 function Cart({ cart, setCart }) {
   const total = cart.reduce(
@@ -7,8 +8,7 @@ function Cart({ cart, setCart }) {
   );
 
   return (
-    <div>
-      <h1>Cart</h1>
+    <div className="cart">
       {cart.map((product) => {
         return (
           <div key={product.id}>

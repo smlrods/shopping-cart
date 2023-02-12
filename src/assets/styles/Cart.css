@@ -1,0 +1,70 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cart > div {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Checkout button */
+
+.cart > button {
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  padding: 5px 20px;
+}
+
+.cart > button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Remove button */
+.cart > div > button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 0 10px;
+}
+
+.cart > div > button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Amount section */
+.cart > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart > div > div > input {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.cart > div > div > button {
+  width: 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.cart > div > div > button:hover {
+  background-color: black;
+  color: white;
+}
+
+.cart > div img {
+  width: 200px;
+}

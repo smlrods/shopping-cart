@@ -1,0 +1,19 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  gap: 10px;
+}
+
+#home button {
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px 20px;
+}
+
+#home button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
