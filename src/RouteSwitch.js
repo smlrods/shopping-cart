@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Cart from "./components/Cart";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -7,7 +7,7 @@ import Product from "./components/Product";
 
 function RouteSwitch({ products, cart, setCart }) {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar cart={cart}/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function RouteSwitch({ products, cart, setCart }) {
         <Route path="/shop/:id" element={<Product products={products} cart={cart} setCart={setCart}/>} />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
